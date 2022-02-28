@@ -1,0 +1,21 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Launcher",
+			"type": "node",
+			"request": "launch",
+			"program": "${workspaceFolder}/src/server.ts",
+			"stopOnEntry": false,
+			"cwd": "${workspaceRoot}",
+			"preLaunchTask": "npm: build",
+			"runtimeExecutable": null,
+			"runtimeArgs": [
+				"--nolazy",
+				"-r", 
+			],
+			"sourceMaps": true,
+			"outDir": "${workspaceRoot}/dist"
+		}
+	]
+}
