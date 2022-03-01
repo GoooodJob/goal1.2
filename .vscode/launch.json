@@ -5,7 +5,7 @@
 			"name": "Launcher",
 			"type": "node",
 			"request": "launch",
-			"program": "${workspaceFolder}/src/server.ts",
+			"program": "${workspaceFolder}/src/client.ts",
 			"stopOnEntry": false,
 			"cwd": "${workspaceRoot}",
 			"preLaunchTask": "npm: build",
