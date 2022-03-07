@@ -4,8 +4,6 @@ import * as  http from "http"
  * Http的客户端
  */
 export class HttpClient {
-    constructor() { }
-
     /**
      * 启动客户端
      */
@@ -13,11 +11,9 @@ export class HttpClient {
         http.get(`http://localhost:3000/helloworld`, res => {
             var html = '';
             res.on('data', data => {
-
                 html += data;
             });
             res.on('end', () => {
-
                 console.log(html);
             })
         }).on('error', (e) => {
